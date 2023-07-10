@@ -1,0 +1,53 @@
+body {
+    box-sizing: border-box;
+    background-image: url("pexels-felix-mittermeier-956999.jpg");
+    background-size: cover;
+}
+
+@font-face {
+    font-family: 'norsebold';
+    src: url('./webfontkit-20230710-051456/norse-bold-webfont.woff2') format('woff2'),
+         url('./webfontkit-20230710-051456//norse-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.logo {
+    background-color: rgba(169, 169, 169, 0.419);
+    width: 50%;
+    margin-top: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.logo > img {
+    height: 5rem;
+    width: 5rem;
+}
+
+.logo > h1 {
+    font-family: 'norsebold', Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 2.5rem;
+}
+
+.container {
+    position: absolute;
+    background-color: white;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    z-index: 1;
+}
+
+.description {
+    top: 0;
+    background-color: lightgray;
+    right: 0;
+    height: 33%;
+    width: 100%;
+}
