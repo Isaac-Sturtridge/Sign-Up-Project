@@ -14,17 +14,33 @@
     </div>
     <div class="container">
         <div class="description">
-            <h1>Description for fake form</h1>
+            <h2>Description for fake form</h1>
             <p>This is a fake form. Sign up for it and I will not give you anything.</p>
         </div>
         <div class="form-container">
-            <h1>Let's do this.</h1>
-            <form action="">
-                <label for="firstname">First Name</label>
-                <input type="text" id="firstname" class="input"/>
-                <label for="lastname">Last Name</label>
-                <input type="text" id="lastname" class="">
+            <h3>Let's do this.</h1>
+            <form action="" class="form">
+                <div class="column">
+                    <label for="firstname">First Name</label>
+                    <input type="text" name="firstname" id="firstname" class="input"/>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" class="input"/>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" class="input error"/>
+                </div>
+                <div class="column">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" name="lastname" id="lastname" class="input"/>
+                    <label for="phonenumber">Phone Number</label>
+                    <input type="text" name="number" id="number" class="input"/>
+                    <label for="confirmpassword">Confirm Password</label>
+                    <input type="password" name="confirmpassword" id="confirmpassword" class="input error"/>
+                </div>
             </form>
+        </div>
+        <div class="button-container">
+            <button type="submit" class="button">Create Account</button>
+            <p>Already have an account? <a href="./index.html">Log In</a></p>
         </div>
         <div class="account-status"></div>
     </div>
